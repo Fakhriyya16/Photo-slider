@@ -1,46 +1,41 @@
-
-
-
-
-.photo-slider{
-    margin-top: 200px;
+.photo-slider {
+    margin-top: 150px;
     width: 100%;
     justify-content: center;
     position: relative;
+    height: 400px;
 
-    .images{
-        img{
+    .images {
+        img {
             position: absolute;
+            left: 350px;
+            opacity: 0;
+            transition: all 1s;
+            z-index: 0;
         }
-        img:first-child{
-        }
-        img:nth-child(2){
+
+        .active-image {
             opacity: 1;
-        }
-        img:nth-child(3){
-            opacity: 0;
-        }
-        img:nth-child(4){
-            opacity: 0;
-        }
-        img:last-child{
-            opacity: 0;
+            z-index: 1;
         }
     }
-    
-    .left-arrow{
+
+    .left-arrow {
         position: absolute;
         left: 355px;
         top: 195px;
+        z-index: 2;
     }
-    .right-arrow{
+
+    .right-arrow {
         position: absolute;
         right: 355px;
         top: 195px;
+        z-index: 2;
     }
 
-    .icons{
-        font-size: 25px;
+    .icons {
+        font-size: 30px;
         color: white;
         cursor: pointer;
     }
