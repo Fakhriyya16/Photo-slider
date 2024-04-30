@@ -1,0 +1,47 @@
+
+
+
+
+.photo-slider{
+    margin-top: 200px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+
+    .images{
+        img{
+            position: absolute;
+        }
+        img:first-child{
+        }
+        img:nth-child(2){
+            opacity: 1;
+        }
+        img:nth-child(3){
+            opacity: 0;
+        }
+        img:nth-child(4){
+            opacity: 0;
+        }
+        img:last-child{
+            opacity: 0;
+        }
+    }
+    
+    .left-arrow{
+        position: absolute;
+        left: 355px;
+        top: 195px;
+    }
+    .right-arrow{
+        position: absolute;
+        right: 355px;
+        top: 195px;
+    }
+
+    .icons{
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    }
+}

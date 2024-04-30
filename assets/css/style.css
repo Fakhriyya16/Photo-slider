@@ -1,0 +1,36 @@
+.photo-slider {
+  margin-top: 200px;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+.photo-slider .images img {
+  position: absolute;
+}
+.photo-slider .images img:nth-child(2) {
+  opacity: 1;
+}
+.photo-slider .images img:nth-child(3) {
+  opacity: 0;
+}
+.photo-slider .images img:nth-child(4) {
+  opacity: 0;
+}
+.photo-slider .images img:last-child {
+  opacity: 0;
+}
+.photo-slider .left-arrow {
+  position: absolute;
+  left: 355px;
+  top: 195px;
+}
+.photo-slider .right-arrow {
+  position: absolute;
+  right: 355px;
+  top: 195px;
+}
+.photo-slider .icons {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
